@@ -1,5 +1,5 @@
 {
-  "name": "number-to-words",
+  "name": "number-to-words-hebrew",
   "version": "1.0.0",
   "description": "Converts number to words. Supported languages: Hebrew",
   "main": "build/index.js",
@@ -7,7 +7,9 @@
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "jest build",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "babel": {
     "presets": [
@@ -36,6 +38,7 @@
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "jest": "^25.1.0",
+    "np": "^6.1.0",
     "watch": "^1.0.2"
   }
 }
