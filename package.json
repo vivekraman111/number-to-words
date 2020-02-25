@@ -1,0 +1,41 @@
+{
+  "name": "number-to-words",
+  "version": "1.0.0",
+  "description": "Converts number to words. Supported languages: Hebrew",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest build",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivekraman111/number-to-words.git"
+  },
+  "keywords": [
+    "number",
+    "words",
+    "hebrew"
+  ],
+  "author": "Vivek Raman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivekraman111/number-to-words/issues"
+  },
+  "homepage": "https://github.com/vivekraman111/number-to-words#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "jest": "^25.1.0",
+    "watch": "^1.0.2"
+  }
+}
